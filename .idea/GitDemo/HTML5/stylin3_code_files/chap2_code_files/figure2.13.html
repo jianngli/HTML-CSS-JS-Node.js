@@ -8,7 +8,10 @@
 	/*section > h2 { font-style:italic; }   /* h2 selected – is a child of section */
 	/*h2 + p { font-variant:small-caps;} /* first p selected - is first sibling of h2 */
 	/*h2 ~ a {color:red;} /* only sibling link tag is selected */
-	section * a {font-size:1.3em;} /* selects link in p only - has a tag (here, p) inbetween section and the link */
+	section * a {font-size:1.3em;
+	color:red;
+		text-decoration: none;
+	} /* selects link in p only - has a tag (here, p) inbetween section and the link */
 </style>
 
 </head>
@@ -17,7 +20,7 @@
 <div>
 	<section>
 		<h2>An H2 Heading</h2>
-		<p>This is paragraph 1</p>
+		<p>This is paragraph 1<span>sdasdadasd<a href="#">dasdadasda</a></span></p>
 		<p>Paragraph 2 has <a href="#">a link</a> in it.</p>
         <a href="#">Link</a>
 	</section>
