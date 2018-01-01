@@ -11,12 +11,12 @@ form.search {
 .search input {
 	float:right; width:70px;	
 	padding:2px 0 3px 5px;
-	border-radius:10px 0px 10px 0px;
+	border-radius:10px;
 	font-family:"Source Sans Pro", helvetica, sans-serif;
 	font-style: normal; font-weight: 400; font-size:1em;
 	color:#888;
 	outline:none; /* removes default border hilite */
-	-webkit-transition:2s width; /* animates field */
+	-webkit-transition:1s width; /* animates field */
 	}
 .search input:focus {
 	width:140px;

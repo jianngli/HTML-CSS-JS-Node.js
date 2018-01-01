@@ -13,9 +13,9 @@ header {
 	position:relative; /* positioning context for title and search areas */
 	height:70px;   /*  fixed height to enclose absolutely positioned elements */	
 	margin:10px 0;  /* vertical space around header */
-	border-radius:20px 0px 20px 0px; /* order: tl, tr, br, bl */
+	border-radius:20px ; /* order: tl, tr, br, bl */
 	box-shadow:0 12px 8px -9px #555; /* negative spread brings shadow inside box width */
-	background:#fff;
+	background:#ccc;
 	padding-top:1px; /* prevents menu's top margin collapsing */
 	}
 header section#title {
@@ -216,7 +216,7 @@ section#book_area	{
 	background:#fff;
 	padding:10px 2px 5px; /* space around popup content */
 	border:2px solid #f58c21;
-	border-radius:10px 0px 10px 0px;
+	border-radius:10px ;
 	box-shadow:4px 4px 16px #555; 
 	color:#555;
 	font-family:"Source Sans Pro", helvetica, sans-serif;

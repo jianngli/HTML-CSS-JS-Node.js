@@ -27,7 +27,7 @@ nav.menu li a {
 	-webkit-font-smoothing: antialiased; /* prevents pop of anti-alias change at end of opacity transition */
 	}
 nav.menu li.choice1 a {
-	background:#f58c21;
+	background: #876e9c;
 	}
 nav.menu li.choice2 a {
 	background:#4eb8ea;
