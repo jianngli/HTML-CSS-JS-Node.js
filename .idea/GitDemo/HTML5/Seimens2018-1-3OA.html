@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.css"/>
+    <style>
+        <!--clear client defualt style -->
+        *{
+            margin:0;
+            padding:0;
+        }
+        :focus{
+            outline:0;
+        }
+        body{
+            width: 100%;
+            background-color: #ccc;
+            font-family: Aharoni,sans-serif;
+            font-size: 16px;
+        }
+        #wrepper{
+            float:left;
+            width:100%;
+            height: auto;
+            border: 1px solid red;
+            position:relative;
+        }
+        #head_main {
+            width: 80%;
+            float:left;
+            border: 1px solid blue;
+            margin: 5px;
+            padding: 5px;
+        }
+        #head_main menu{
+            width: 20%;
+            height:1000px;
+            float:left;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        #head_main section{
+            width: 70%;
+            height:auto;
+            float:left;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+        /*#head_main section nav{*/
+            /*width: 95%;*/
+            /*float:left;*/
+            /*border: 1px solid black;*/
+            /*margin: 5px;*/
+            /*padding: 5px;*/
+        /*}*/
+        #head_main section nav, #head_main section article,#head_main section footer{
+            width:100%;
+            height:auto;
+            float:left;
+            border: 1px solid black;
+
+            padding: 15px;
+            clear: left;
+        }
+        /*#head_main section footer{*/
+            /*width: 95%;*/
+            /*float:left;*/
+            /*border: 1px solid black;*/
+            /*margin: 5px;*/
+            /*padding: 5px;*/
+        /*}*/
+
+
+        #aside_main{
+            width: 15%;
+            height:auto;
+            float:left;
+            border: 1px solid black;
+            margin:5px;
+            padding: 5px;
+
+        }
+        #aside_main section, #aside_main .aside_top,.aside_section{
+            margin: 5px auto;
+            height:auto;
+            /*float:left;*/
+            border: 1px solid red;
+            /*margin:5px;*/
+            /*padding: 5px;*/
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div id="wrepper">
+    <header id="head_main">header
+        <menu>menu</menu>
+        <section>section
+            <nav>nav</nav>
+            <article>article</article>
+            <footer>
+                <button>按钮</button>
+            </footer>
+        </section>
+
+    </header>
+    <aside id="aside_main">
+        <section>
+            <div class="aside_top">
+                <h1>time</h1>
+            </div>
+            <div class="aside_section">
+                <h1>gonggao</h1>
+            </div>
+        </section>
+    </aside>
+    <footer>
+        公司图标
+    </footer>
+
+</div>
+</body>
+</html>

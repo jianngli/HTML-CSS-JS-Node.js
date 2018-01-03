@@ -5,143 +5,42 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
-    <link rel="stylesheet" type="text/css" href="css/search.css">
-
     <title>Document</title>
     <style>
-        @charset "UTF-8";
-        /* CSS Document */
+        *{margin:0; padding:0;}
+        header{
+            position:relative;
+            height:70px;
+            margin:10px;
+            background:#fff;
+            border-radius:0 10px 0 10px;
+            box-shadow: 0 10px 20px -10px #1e243e;
+            padding: 1px;
+        }
 
-        * {margin:0; padding:0;}
-        body {
-            font-family:helvetica, arial, sans-serif;
-            background:#efefef; margin:0 0;
-        }
-        #wrapper {
-            width:1100px; margin:0 auto 20px;
-        }
-        header {
-            position:relative; /* positioning context for title and search areas */
-            height:100px;   /*  fixed height to enclose absolutely positioned elements */
-            margin:10px 0;  /* vertical space around header */
-            border-radius:20px ; /* order: tl, tr, br, bl */
-            box-shadow:0 12px 8px -9px #555; /* negative spread brings shadow inside box width */
-            background:#ccc;
-            padding-top:1px; /* prevents menu's top margin collapsing */
-        }
-        header section#title {
-            position:absolute;
-            width:300px; /* wide enough to not force text wrap */
-            height:65px; /* tall enough for both lines of text */
-            left:0px; /* top left corner positioning */
-            top:0px;
-        }
-        header h1 {
-            padding:9px 12px 0;
-            font-family:Lato, helvetica, sans-serif;
-            font-style:normal;
-            font-weight:900;
-            font-size:2.2em;
-            line-height:1;
-            letter-spacing:-.025em;
-            color:#4eb8ea;
-        }
-        header h2 {
-            font-family:"Source Sans Pro", helvetica, sans-serif;
-            font-style:normal;
-            font-weight:400;
-            font-size:.9em;
-            color:#333;
-            padding:0px 12px;
-            line-height:1;
-            letter-spacing:-.025em;
-        }
-        section#main{
-            height: 800px;
-            border: 1px solid #ccc;
-            border-radius: 20px;
-        }
-        nav#nav_left{
-            width: 250px;
-            height:800px;
-            position: fixed;
-            left:50px;
-            top: 0;
-            border: 1px solid #ccc;
-            border-radius: 20px;
-            background-color: #ccc;
-            box-shadow:0 12px 8px -9px #555;
-        }
-        nav#nav_left li{
-            list-style-type: none;
-        }
-   </style>
+    </style>
 </head>
 <body>
-<div id="wrapper">
+<div class="wrapper">
     <header>
         <section id="title">
             <h1>Siemems</h1>
-            <!--<h2>oa-system</h2>-->
+            <h2>oa-system</h2>
         </section><!--section-->
         <nav class="menu">
             <ul>
-                <li class="choice1"><a href="#">Articles</a></li>
-                <li class="choice1"><a href="#">Books</a>
-                    <ul><!-- drop down menu items -->
-                        <li><a href="#">Stylin&#8217; with CSS</a></li>
-                        <li><a href="#">Scriptin&#8217; with Ajax</a></li>
-                        <li><a href="#">Codin&#8217; for the Web</a></li>
-                        <li><a href="#">Visual Stylin' with CSS3</a></li>
-
-                    </ul>
-                </li>
-                <li class="choice1" ><a href="#">Resources</a>
-                    <ul><!-- drop down menu items -->
-                        <li><a href="#">Resource 1</a></li>
-                        <li><a href="#">Resource 2</a></li>
-                        <li><a href="#">Resource 3</a></li>
-                    </ul>
-                </li>
-                <li class="choice1"><a href="#">Bookshelf</a></li>
-                <li class="choice1"><a href="#">Contact Me</a></li>
-
+                <li class="choice1"><a href="#">index</a></li>
+                <li class="choice2"><a href="#">project</a></li>
+                <li class="choice3"><a href="#">task</a></li>
+                <li class="choice4"><a href="#">users</a></li>
+                <li class="choice5"><a href="#">admin</a></li>
             </ul>
-        </nav>
-        <!--<form class="search" action="#" method="post">-->
-            <!--<label for="user_name">search</label> &lt;!&ndash; 标注的for属性与文本框ID相同 &ndash;&gt;-->
-            <!--<input type="text" id="user_name" name="user_name" placeholder="search" />-->
-        <!--</form>-->
-        <!--section-->
+        </nav><!--nav-->
+        <form>
+            <lable for="input_search">search</lable>
+            <input type="search" name=search id="input_search" placeholder="Search"/>
+        </form><!--section-->
     </header><!--header-->
-    <nav  id="nav_left">
-        <ul>
-            <li class="choice1"><a href="#">Articles</a></li>
-            <li class="choice1"><a href="#">Books</a>
-                <ul><!-- drop down menu items -->
-                    <li><a href="#">Stylin&#8217; with CSS</a></li>
-                    <li><a href="#">Scriptin&#8217; with Ajax</a></li>
-                    <li><a href="#">Codin&#8217; for the Web</a></li>
-                    <li><a href="#">Visual Stylin' with CSS3</a></li>
-
-                </ul>
-            </li>
-            <li class="choice1" ><a href="#">Resources</a>
-                <ul><!-- drop down menu items -->
-                    <li><a href="#">Resource 1</a></li>
-                    <li><a href="#">Resource 2</a></li>
-                    <li><a href="#">Resource 3</a></li>
-                </ul>
-            </li>
-            <li class="choice1"><a href="#">Bookshelf</a></li>
-            <li class="choice1"><a href="#">Contact Me</a></li>
-
-        </ul>
-    </nav>
-    <section id="main">
-
-    </section>
 </div>
 </body>
 </html>
