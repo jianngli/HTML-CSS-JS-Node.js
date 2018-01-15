@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script>
 
-    </script>
 </head>
 <body>
+<div id="foo">cc</div>
+<p>sadsad</p>
+<script type= "text/javascript ">
+
+    var element = document.getElementById('foo');
+    alert(element.innerHTML);
+    var elements = document.getElementsByTagName('*');
+    for (var key in elements) {
+        console.log(key+':'+elements[key]);
+    }
+
+
+
+
+</script>
 </body>
 </html>

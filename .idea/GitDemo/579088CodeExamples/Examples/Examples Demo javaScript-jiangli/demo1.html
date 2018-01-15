@@ -1,25 +1,71 @@
-<!DOCTYPE html>
+<!--<html>-->
+<!--<head>-->
+    <!--<script type="text/javascript">-->
+        <!--function insCell()-->
+        <!--{-->
+            <!--var x=document.getElementById('tr2').insertCell(-1)-->
+            <!--x.innerHTML="John"-->
+        <!--}-->
+    <!--</script>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<table border="1">-->
+    <!--<tr id="tr1">-->
+        <!--<th>Firstname</th>-->
+        <!--<th>Lastname</th>-->
+    <!--</tr>-->
+    <!--<tr id="tr2">-->
+        <!--<td>Peter</td>-->
+        <!--<td>Griffin</td>-->
+        <!--<td>Griffin</td>-->
+        <!--<td>Griffin</td>-->
+    <!--</tr>-->
+<!--</table>-->
+<!--<br />-->
+<!--<input type="button" onclick="insCell()" value="Insert cell">-->
+
+<!--</body>-->
+<!--</html>-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>alert</title>
     <script type="text/javascript">
-        function shyhi(){
-            alert("hi!");
-            var i = 12;
-            if(i < 12 ){
-                alert("i<12");
-            }else if(i >12) {
-                alert("i>12");
-            }else
-                {
-                  alert("i=12");
-                }
+        function insRow()
+        {
+            var x=document.getElementById('myTable').insertRow(-1)
+            var y=x.insertCell(0)
+            var z=x.insertCell(1)
+            y.innerHTML=""
+            z.innerHTML=""
+            y.style.height="200px";
         }
-        shyhi();
+        function insCell() {
+            var x = document.getElementById('aa').insertCell(-1);
+         x.innerHTML = "johnny";
+
+
+        }
     </script>
 </head>
+
 <body>
+<table id="myTable" border="1">
+    <tr id="aa">
+        <td>Row1 cell1</td>
+        <td>Row1 cell2</td>
+    </tr>
+    <tr class="bb">
+        <td>Row2 cell1</td>
+        <td>Row2 cell2</td>
+    </tr>
+    <tr class="cc">
+        <td>Row3 cell1</td>
+        <td>Row3 cell2</td>
+    </tr>
+</table>
+<br />
+<input type="button" onclick="insRow()" value="插入行">
+<input type="button" onclick="insCell()" value="插入行">
 
 </body>
 </html>
