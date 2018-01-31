@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://cdn.bootcss.com/jquery.tipsy/1.0.3/jquery.tipsy.css" rel="stylesheet">
+    <script src="../../../assets/js/jquery-1.11.2.min.js"></script>
+    <script>
+        <script src="https://cdn.bootcss.com/jquery.tipsy/1.0.3/jquery.tipsy.js"></script>
+        $(function () {
+            $('#foo').tipsy({fade: true, gravity: 'n'});
+        })
+        function gotoPage(num) {
+            updateContent(num);
+            location.hash = '#!page='+num;
+        }
+        window.onhshchange = function () {
+            var num = location.hash.match(/#!page = ([0-9]+)/)[1];
+            updateContent(num);
+        };
+    </script>
 </head>
 <body>
-
+<div id="foo">bao</div>
 </body>
 </html>

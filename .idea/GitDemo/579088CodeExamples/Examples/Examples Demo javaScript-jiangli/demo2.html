@@ -1,25 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <script>
+        function loadXMLDoc()
+        {
+            var xmlhttp;
+            if (window.XMLHttpRequest)
+            {
+                // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+                xmlhttp=new XMLHttpRequest();
+            }
+            else
+            {
+                // IE6, IE5 浏览器执行代码
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function()
+            {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+                    document.getElementById('h2').innerHTML = '<span style:"color:red;">'+xmlhttp.responseText+'</span>';
+                }
+            }
+            xmlhttp.open("GET","demo3.html",true);
+            xmlhttp.send();
+        }
+        var h2 = document.getElementsByTagName('h2');
+        console.log(h2);
+        var itemLi = document.getElementsByTagName('li');
+        console.log(itemLi);
+    </script>
+<h2 id="h2">AJAX</h2>
+<button type="button" onclick="loadXMLDoc()">请求数据</button>
+<div id="myDiv"></div>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>.
 
-</head>
-<body>
-<div id="foo">cc</div>
-<p>sadsad</p>
-<script type= "text/javascript ">
 
-    var element = document.getElementById('foo');
-    alert(element.innerHTML);
-    var elements = document.getElementsByTagName('*');
-    for (var key in elements) {
-        console.log(key+':'+elements[key]);
-    }
-
-
-
-
-</script>
+</ul>
 </body>
 </html>

@@ -5,4 +5,49 @@ body{
     color:#444;
     margin: 0;
     padding: 0;
+
+
+}
+/**
+Set clear float
+ */
+.clearfix{
+    display:block;
+    clear:bton;
+}
+
+div.war{
+    border:2px solid gray;
+    background:#9AC;
+   overflow:auto;
+    width:50%;
+    margin:0 auto;
+}
+div.war1{
+    float:left;width:28%;
+    padding: 0 1%; margin: 0 1%;
+    border: 1px solid salmon;
+}
+div.war +* {
+    width: 300px;
+    margin: 0 auto;
+    border:1px solid red;
+}
+div.war +*+* {
+    float: left;
+    width: 300px;
+    margin: 0 auto;
+    border:1px solid red;
+    height: 500px;
+}
+div.war +*+*+*{
+    float:right;
+    height: 500px;
+    width: 300px;
+    margin: 0 auto;
+    border:1px solid red;
+    clear: both;
+}
+p{
+    border-radius:60px/60px;
 }
